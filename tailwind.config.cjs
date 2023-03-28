@@ -7,7 +7,14 @@ module.exports = {
     "./src/**/*.{html,js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'firstview': "url('fv-bg.png')",
+      },
+      margin:{
+        'cen':'0 auto',
+      }
+    },
   },
   plugins: [],
 }
