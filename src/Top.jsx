@@ -18,6 +18,12 @@ const Firstview =()=>{
 }
 
 const Top =()=>{
+    const textdata = [
+        "まずは会員登録",
+        "カートに入れる",
+        "スマホ一台30秒でお申し込み",
+        "商品が届く"
+    ];
     return(
         <>
             <main className='bg-[#F5F5F5]'>
@@ -64,6 +70,28 @@ const Top =()=>{
                             </section>
                         </div>
                     </section>
+
+                    <section>
+                        <h2 className=' font-bold text-[40px] text-[#284F43]'>
+                            購入までのステップ
+                        </h2>
+                        
+                        {
+                            textdata.map((data,index)=>{
+                                console.log(data);
+                                return `step${index + 1}
+                                ${data}`;
+                            })
+                        }
+
+                        <div>
+                            <img src="#" alt="会員登録" />
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </section>
+
                 </div>
                 
             </main>
