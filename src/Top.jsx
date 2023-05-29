@@ -79,24 +79,25 @@ const Top =()=>{
                         <h2 className=' font-bold text-[40px] text-[#284F43] pl-[60px] pb-[140px]'>
                              購入までのステップ
                         </h2>
-                    <div className=' flex'>
+                        <div className=' flex m-cen'>
                         {
                             stepdata.text.map((data,index)=>{
                                 const imgurl = stepdata.img[index];
-                                const view = <div className=' flex-1 text-center'>
-                                                <p className=' text-[32px] text-[#284F43]'>step{index+1}</p>
+                                const view = <div className='text-center w-[25%]'>
                                                 <figure className=' w-full'>
                                                     <img src={imgurl} alt="stepの画像" className='w-[80%] m-cen'/>
                                                 </figure>
+                                                <p className=' text-[32px] text-[#284F43]'>step{index+1}</p>
                                                 <p className=' text-[32px] font-bold text-[#284F43]'>{data}</p>
                                             </div> ; 
-                                            return view
-                                        })
-                                    }
-                                </div>
+                                return view
+                            })
+                        }
+                        </div>
                                 
-                            </section>
-                      </div>
+                            
+                    </section>
+                    </div>
                 </div>
             </main>
             
