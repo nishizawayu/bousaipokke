@@ -9,7 +9,7 @@ const Firstview =()=>{
                 <p className='w-[30%] m-cen pt-[5%] z-10 relative'><img src="./fv-text1.png" alt="スマホ一台で丸ごとOK" className="w-full"/></p>
                 <div className='w-full h-screen relative z-[1]'>
                     <p className='w-[70%] absolute top-0 left-[15%]'><img src="./fv-text2.png" alt="防災" className="w-full"/></p>
-                    <img src="./fv-woman.png" alt="女性の画像" className="w-[23%] relative z-10 m-cen top-0"/>
+                    <img src="./fv-woman.png" alt="女性の画像" className="w-[30%] relative z-10 m-cen top-0"/>
                     <p className='w-[60%] absolute top-[35%] left-[20%] z-20'><img src="./fv-text3.png" alt="ポッケ" className="w-full"/></p>   
                 </div>     
             </div>
@@ -20,16 +20,16 @@ const Firstview =()=>{
 const Top =()=>{
     const stepdata = {
         "id" : [1,2,3,4],
-        "text" :["まずは会員登録","カートに入れる","スマホ一台30秒でお申し込み","商品が届く"],
-        "img" : ["","",""]
+        "text" :["まずは会員登録","カートに入れる",`スマホ1台!30秒でお申し込み`,"商品が届く"],
+        "img" : ["./step2.png","./step2.png","./step3.png","./step4.png"]
     }
     return(
         <>
             <main className='bg-[#F5F5F5]'>
                 <Firstview/>
-                <div className='w-[80%] m-cen'>
+                <div className='w-full'>
                     {/* about */}
-                    <section className='pt-40'>
+                    <section className='pt-40 w-[80%] m-cen'>
                         <h2 className=' font-bold text-[40px] text-[#284F43]'>
                             30秒で続けられる防災準備
                         </h2>
@@ -70,29 +70,34 @@ const Top =()=>{
                         </div>
                     </section>
 
-                    <section>
-                        <h2 className=' font-bold text-[40px] text-[#284F43]'>
-                            購入までのステップ
+                
+                <div className=' w-full  bg-[#D6E7DA] relative'>
+                    <div className=' absolute top-[-45px]'>
+                        <img src="./gizagiza.png" alt="" />
+                    </div>
+                    <section className='w-[80%] m-cen pt-[180px]'>
+                        <h2 className=' font-bold text-[40px] text-[#284F43] pl-[60px] pb-[140px]'>
+                             購入までのステップ
                         </h2>
-                        
+                    <div className=' flex'>
                         {
                             stepdata.text.map((data,index)=>{
-                                const step = stepdata.id[index];
-                                // const view = `<p>step${step}</p>`+`<p>${data}</p>`; 
-                                const view = <div>
-                                                <p>step{step}</p>
-                                                <figure>
-                                                    <img src="#" alt="stepの画像" />
+                                const imgurl = stepdata.img[index];
+                                const view = <div className=' flex-1 text-center'>
+                                                <p className=' text-[32px] text-[#284F43]'>step{index+1}</p>
+                                                <figure className=' w-full'>
+                                                    <img src={imgurl} alt="stepの画像" className='w-[80%] m-cen'/>
                                                 </figure>
-                                                <p>{data}</p>
+                                                <p className=' text-[32px] font-bold text-[#284F43]'>{data}</p>
                                             </div> ; 
-                                return view
-                            })
-                        }
-                    </section>
-
+                                            return view
+                                        })
+                                    }
+                                </div>
+                                
+                            </section>
+                      </div>
                 </div>
-                
             </main>
             
         </>
