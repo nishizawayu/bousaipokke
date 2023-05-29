@@ -18,12 +18,11 @@ const Firstview =()=>{
 }
 
 const Top =()=>{
-    const textdata = [
-        "まずは会員登録",
-        "カートに入れる",
-        "スマホ一台30秒でお申し込み",
-        "商品が届く"
-    ];
+    const stepdata = {
+        "id" : [1,2,3,4],
+        "text" :["まずは会員登録","カートに入れる","スマホ一台30秒でお申し込み","商品が届く"],
+        "img" : ["","",""]
+    }
     return(
         <>
             <main className='bg-[#F5F5F5]'>
@@ -77,19 +76,19 @@ const Top =()=>{
                         </h2>
                         
                         {
-                            textdata.map((data,index)=>{
-                                console.log(data);
-                                return `step${index + 1}
-                                ${data}`;
+                            stepdata.text.map((data,index)=>{
+                                const step = stepdata.id[index];
+                                // const view = `<p>step${step}</p>`+`<p>${data}</p>`; 
+                                const view = <div>
+                                                <p>step{step}</p>
+                                                <figure>
+                                                    <img src="#" alt="stepの画像" />
+                                                </figure>
+                                                <p>{data}</p>
+                                            </div> ; 
+                                return view
                             })
                         }
-
-                        <div>
-                            <img src="#" alt="会員登録" />
-                            <p>
-                                
-                            </p>
-                        </div>
                     </section>
 
                 </div>
