@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './Styles.css'
+import './styles.css'
 import Top from './Top'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
