@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'firstview': "url('./public/fv-bg.png')",
-        'pc_footer': "url('./public/footer_bg.png')"
+        'firstview': "url('./fv-bg.png')",
+        'pc_footer': "url('./footer_bg.png')"
       },
     },
   },
