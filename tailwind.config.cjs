@@ -12,9 +12,6 @@ module.exports = {
         'firstview': "url('fv-bg.png')",
         'gizagiza1': "url('gizagiza.png')",
       },
-      margin:{
-        'cen':'0 auto',
-      }
     },
   },
   plugins: [],
