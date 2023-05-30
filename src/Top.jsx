@@ -1,7 +1,8 @@
 import './App.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import FAQ from './FAQ';
+import Accordion from './Accodion';
+import ManyInput from './form';
 
 // ファーストビュー
 const Firstview = () => {
@@ -142,14 +143,52 @@ const Top = () => {
 
                 </div>
 
-                <div className='relative w-full bg-[#D6E7DA] pb-[500px] pt-[200px]'>
+                <div className='relative w-full bg-[#D6E7DA] pb-[300px] pt-[200px]'>
                     {/* <div className='absolute'>
                         <img src="./gizagiza2.png" alt="境界線" />
                     </div> */}
                     <section className=' w-[80%] mx-auto'>
-                        <h2 className=' font-bold text-[32px] text-[#284F43] pl-[120px] pb-[140px]'>
+                        <h2 className=' font-bold text-[32px] text-[#284F43] pl-[20px] pb-[30px]'>
                             よくあるご質問
                         </h2>
+                        <Accordion
+                            title= "注文してからどれくらいで届きますか？"
+                            content="This is the content of the first accordion."
+                        />
+                        <Accordion
+                            title="置き配はできますか？"
+                            content="This is the content of the second accordion."
+                        />
+                        <Accordion
+                            title="やめたい場合はどうしたらいいですか？"
+                            content="This is the content of the third accordion."
+                        />
+                        <Accordion
+                            title="申し込みはどこからすればいいですか？"
+                            content="This is the content of the third accordion."
+                        />
+                        <Accordion
+                            title="手数料（配達料）はいくらですか？"
+                            content="This is the content of the third accordion."
+                        />
+
+                    </section>
+
+                </div>
+
+                <div className='relative w-full bg-[#F5F5F5] pb-[300px] pt-[200px]'>
+                    <div className='absolute top-[-100px]'>
+                            <img src="./gizagiza3.png" alt="境界線" />
+                    </div>
+                
+                    <section className=' w-[80%] mx-auto'>
+                        <h2 className=' font-bold text-[32px] text-[#284F43] pl-[20px] pb-[60px]'>
+                            新規会員登録はこちら
+                        </h2>
+                        <div className=' w-[90%] bg-[#E0EBE3] mx-auto'>
+                            <ManyInput/>
+                        </div>
+
                     </section>
 
                 </div>
