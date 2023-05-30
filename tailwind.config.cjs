@@ -11,6 +11,7 @@ module.exports = {
       backgroundImage: {
         'firstview': "url('fv-bg.png')",
         'gizagiza1': "url('gizagiza.png')",
+        'pc_footer':"url('footer_bg.png')"
       },
     },
   },

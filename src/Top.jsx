@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Accordion from './Accodion';
 import ManyInput from './form';
+import Header from './Header';
+import Footer from './footer';
 
 // ファーストビュー
 const Firstview = () => {
@@ -56,8 +58,10 @@ const Top = () => {
     }
     return (
         <>
+            <Header/>
             <main className='bg-[#F5F5F5]'>
                 <Firstview />
+                
                 <div className='w-full'>
                     {/* about */}
                     <section className='pt-40 w-[80%] mx-auto'>
@@ -185,7 +189,7 @@ const Top = () => {
                         <h2 className=' font-bold text-[32px] text-[#284F43] pl-[20px] pb-[60px]'>
                             新規会員登録はこちら
                         </h2>
-                        <div className=' w-[90%] bg-[#E0EBE3] mx-auto'>
+                        <div className=' w-[80%] bg-[#E0EBE3] mx-auto'>
                             <ManyInput/>
                         </div>
 
@@ -194,6 +198,7 @@ const Top = () => {
                 </div>
 
             </main>
+            <Footer/>
 
         </>
     )
