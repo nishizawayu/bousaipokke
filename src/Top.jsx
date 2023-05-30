@@ -72,7 +72,7 @@ const Top = () => {
                         <div className='w-full lg:flex lg:justify-between pt-32 mx-auto text-center pb-60'>
                             <section>
                                 <h3 className='font-bold text-2xl leading-7 text-[#284F43]'>
-                                    <span className='font-bold text-[40px]'>ぼうさいポッケ</span><br />が、かなえてくれる
+                                    <span className='font-bold text-[40px]'>ぼうさいポッケ</span><br/>が、かなえてくれる
                                 </h3>
                                 <p className='text-base pt-8 leading-10'>
                                     いざというときに備えたい、<br />
@@ -94,7 +94,7 @@ const Top = () => {
                             </section>
                             <section>
                                 <h3 className='font-bold text-2xl leading-7 text-[#284F43]'>
-                                    <span className='font-bold text-[40px]'>ぼうさいポッケ</span><br />が、らくらくつづく
+                                    <span className='font-bold text-[40px]'>ぼうさいポッケ</span><br/>が、らくらくつづく
                                 </h3>
                                 <p className='text-base pt-8 leading-10'>
                                     めんどうな防災管理が<br />

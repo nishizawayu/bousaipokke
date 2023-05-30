@@ -109,14 +109,14 @@ const ManyInput = () => {
             <input
                 value={post1}
                 onChange={handlePost1}
-                type="number"
+                type="text"
                 placeholder="000"
                 className="w-[10%] border border-[#000] rounded"
             />-
             <input
                 value={post2}
                 onChange={handlePost2}
-                type="number"
+                type="text"
                 placeholder="0000"
                 className="w-[25%] border border-[#000] rounded"
             />
