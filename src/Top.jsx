@@ -123,7 +123,17 @@ const Top = () => {
                                             </figure>
                                             <p className=' text-[20px] text-[#284F43]'>step{index + 1}</p>
                                             <p className=' text-[20px] font-bold text-[#284F43]'>{data}</p>
+                                            {
+                                            (()=>{
+                                                if(index<stepdata.id.length-1){
+                                                    return(
+                                                        <p className=''>aaaaaaa</p>
+                                                    )
+                                                }
+                                            })()
+                                        }
                                         </div>
+                                        
                                     ))
                                 }
                             </div>

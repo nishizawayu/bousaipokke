@@ -83,21 +83,21 @@ const ManyInput = () => {
             <input
                 value={tel1}
                 onChange={handleTel1}
-                type="number"
+                type="text"
                 placeholder="000"
                 className="w-[25%] border border-[#000] rounded"
             />-
             <input
                 value={tel2}
                 onChange={handleTel2}
-                type="number"
+                type="text"
                 placeholder="0000"
                 className="w-[25%] border border-[#000] rounded"
             />-
             <input
                 value={tel3}
                 onChange={handleTel3}
-                type="number"
+                type="text"
                 placeholder="000"
                 className="w-[25%] border border-[#000] rounded"
             />
