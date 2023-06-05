@@ -117,21 +117,23 @@ const Top = () => {
                             <div className=' flex mx-auto'>
                                 {
                                     stepdata.text.map((data, index) => (
-                                        <div className='text-center w-[25%]'>
-                                            <figure className=' w-full'>
-                                                <img src={stepdata.img[index]} alt="stepの画像" className='w-[80%] mx-auto' />
-                                            </figure>
-                                            <p className=' text-[20px] text-[#284F43]'>step{index + 1}</p>
-                                            <p className=' text-[20px] font-bold text-[#284F43]'>{data}</p>
+                                        <div className='w-full relative'>
+                                            <div className='text-center w-[90%]'>
+                                                <figure className=' w-full'>
+                                                    <img src={stepdata.img[index]} alt="stepの画像" className='w-[80%] mx-auto' />
+                                                </figure>
+                                                <p className=' text-[20px] text-[#284F43]'>step{index + 1}</p>
+                                                <p className=' text-[20px] font-bold text-[#284F43]'>{data}</p>
+                                            </div>
                                             {
-                                            (()=>{
-                                                if(index<stepdata.id.length-1){
-                                                    return(
-                                                        <p className=''>aaaaaaa</p>
-                                                    )
-                                                }
-                                            })()
-                                        }
+                                                (()=>{
+                                                    if(index<stepdata.id.length-1){
+                                                        return(
+                                                            <p className='w-[5%] absolute top-[33%] right-0'><img src="./arow.png" alt="" /></p>
+                                                        )
+                                                    }
+                                                })()
+                                            }
                                         </div>
                                         
                                     ))
