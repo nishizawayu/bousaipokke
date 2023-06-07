@@ -13,14 +13,15 @@ const Accordion = ({ title, content }) => {
   };
 
   return (
-    <div className="accordion border rounded m-4">
-      <div className="accordion-title rounded-[20px] flex justify-between items-center p-4 bg-[#fff] cursor-pointer" onClick={toggleAccordion}>
+    <div className="accordion border m-4 bg-[#fff] rounded-[20px]">
+      <div className="accordion-title flex justify-between items-center p-4 cursor-pointer" onClick={toggleAccordion}>
         <img src="./Q.png" alt="Q" className='w-[4%]'/>
         <h3 className='m-0 font-bold text-xl text-[#284F43] w-[90%]'>{title}</h3>
         <span className=' text-2xl'>{isOpen ? <AiFillCaretDown/> : <AiFillCaretRight/>}</span>
       </div>
-      <div className="accordion-content max-h-0 overflow-hidden transition-all p-[0 1rem]" ref={contentRef}>
-        <p className='m-0 p-[1rem 0]'>{content}</p>
+      <div className="accordion-content max-h-0 overflow-hidden transition-all pt-0 pb-0 pl-4 pr-4 flex justify-between items-center border-t-2 w-full mx-auto" ref={contentRef}>
+        <img src="./A.png" alt="Q" className='w-[4%] pt-[50px] pb-[50px]'/>
+        <p className='m-0 p-[1rem 0] w-[94%] text-[20px]'>{content}</p>
       </div>
     </div>
   );

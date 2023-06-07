@@ -24,29 +24,60 @@ const Firstview = () => {
 }
 
 const Slider = () => {
-    const slidata = {
-        id: [1, 2, 3, 4],
-        h3: ["賞味期限の確認を忘れてしまう",
-            "時間を割くのがもったいない",
-            "何を揃えたら良いのかわからない"],
-        text: ["忘れがちな食材の賞味期限を近づいたら自動でお知らせ。",
-            "前回購入した商品がわかるからより少ない時間でらくらくチェック",
-            "なにを交換しなくてはいけないかわからない方でも。おすすめの商品を安心管理。"],
-        img: []
-    }
+
     return (
-        <Swiper
-            spaceBetween={50}
-            slidesPerView={3}
+        <div className='bg-iphon bg-inherit bg-no-repeat h-[600px] w-[50%] mx-auto'>
+            <Swiper
+            spaceBetween={10}
+            slidesPerView={1}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
+            {/* スライダーの要素 */}
+            {/* 1つ目 */}
+            <SwiperSlide>
+                <div className='w-[50%] relative pl-[20px] pt-[120px]'>
+                    <div className='flex flex-col-reverse pb-[30px]'>
+                        <h3 className='w-full text-[24px] font-bold text-[#284F43] leading-6 text-center'>賞味期限の確認を<br/>忘れてしまう</h3>
+                        <figure className='pb-[60px] mx-auto'>
+                            <img src="./slider-img1.png" alt="女性の写真" />
+                        </figure>
+                    </div>
+                   
+                    <p className='w-[80%] mx-auto text-[16px] font-light text-[#284F43] pb-[60px]'>忘れがちな食材の賞味期限を<br/>近づいたら自動でお知らせ。</p>
+                </div>
+                
+            </SwiperSlide>
+            {/* 2つ目 */}
+            <SwiperSlide>
+                <div className='w-[50%] relative pl-[20px] pt-[120px]'>
+                    <div className='flex flex-col-reverse pb-[30px]'>
+                        <h3 className='w-full text-[24px] font-bold text-[#284F43] leading-6 text-center'>時間を割くのが<br/>もったいない</h3>
+                        <figure className='pb-[60px] mx-auto'>
+                            <img src="./slider-img2.png" alt="女性の写真" />
+                        </figure>
+                    </div>
+                   
+                    <p className='w-[80%] mx-auto text-[16px] font-light text-[#284F43] pb-[60px]'>前回購入した商品がわかるからより少ない時間でらくらくチェック。</p>
+                </div>
+            </SwiperSlide>
+            {/* 3つ目 */}
+            <SwiperSlide>
+                <div className='w-[50%] relative pl-[20px] pt-[120px]'>
+                    <div className='flex flex-col-reverse pb-[30px]'>
+                        <h3 className='w-full text-[24px] font-bold text-[#284F43] leading-6 text-center'>何を揃えたら良いのか<br/>わからない</h3>
+                        <figure className='pb-[60px] mx-auto'>
+                            <img src="./slider-img3.png" alt="男性の写真" />
+                        </figure>
+                    </div>
+                   
+                    <p className='w-[80%] mx-auto text-[16px] font-light text-[#284F43] pb-[60px]'>なにを交換しなくてはいけないかわからない方でも。おすすめの商品を安心管理。</p>
+                </div>
+            </SwiperSlide>
 
         </Swiper>
+
+        </div>
     )
 }
 
@@ -122,8 +153,8 @@ const Top = () => {
                                                 <figure className=' w-full'>
                                                     <img src={stepdata.img[index]} alt="stepの画像" className='w-[80%] mx-auto' />
                                                 </figure>
-                                                <p className=' text-[20px] text-[#284F43]'>step{index + 1}</p>
-                                                <p className=' text-[20px] font-bold text-[#284F43]'>{data}</p>
+                                                <p className=' text-[20px] text-[#284F43] mt-[5%]'>Step{index + 1}</p>
+                                                <p className=' text-[20px] font-bold text-[#284F43] mt-[5%]'>{data}</p>
                                             </div>
                                             {
                                                 (()=>{
@@ -149,10 +180,12 @@ const Top = () => {
                     {/* <div className='absolute'>
                         <img src="./gizagiza2.png" alt="境界線" />
                     </div> */}
-                    <section className=' w-[80%] mx-auto'>
-                        <h2 className=' font-bold text-[42px] pl-[100px] text-[#284F43]'>
-                            こんな方に<br />おすすめ
-                        </h2>
+                    <section className=' w-[80%] mx-auto flex items-center'>
+                        <div className='relative w-[50%] bg-bg-2 bg-no-repeat h-[600px] bg-contain flex items-center'>
+                            <h2 className='w-full font-bold text-[42px] pl-[100px] text-[#284F43] relative z-10'>
+                                こんな方に<br />おすすめ
+                            </h2>
+                        </div>
 
                         <Slider />
                     </section>
