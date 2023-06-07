@@ -11,6 +11,8 @@ module.exports = {
       backgroundImage: {
         'firstview': "url('/fv-bg.png')",
         'pc_footer': "url('/footer_bg.png')",
+        'iphon': "url('/mobile.png')",
+        'bg-2' : "url('/bg-2.png')"
       },
     },
   },
