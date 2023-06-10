@@ -85,6 +85,12 @@ const Top = () => {
     const stepdata = {
         "id": [1, 2, 3, 4],
         "text": ["まずは会員登録", "カートに入れる", `スマホ1台!30秒でお申し込み`, "商品が届く"],
+        "text2": [
+            ["まずは会員登録"],
+            ["カートに入れる"],
+            ["スマホ1台!","30秒でお申し込み"],
+            ["商品が届く"]
+        ],
         "img": ["./step1.png", "./step2.png", "./step3.png", "./step4.png"]
     }
     return (
@@ -176,13 +182,10 @@ const Top = () => {
                     </div>
                 </div>
 
-                <div className='relative w-full bg-[#D6E7DA] pb-[500px] pt-[200px]'>
-                    {/* <div className='absolute'>
-                        <img src="./gizagiza2.png" alt="境界線" />
-                    </div> */}
+                <div className='relative w-full bg-[#D6E7DA] pb-[500px] pt-[300px] bg-bg-3 bg-cover'>
                     <section className=' w-[80%] mx-auto flex items-center'>
-                        <div className='relative w-[50%] bg-bg-2 bg-no-repeat h-[600px] bg-contain flex items-center'>
-                            <h2 className='w-full font-bold text-[42px] pl-[100px] text-[#284F43] relative z-10'>
+                        <div className='relative w-[50%] bg-bg-2 bg-no-repeat h-[600px] bg-contain flex items-center '>
+                            <h2 className='w-[80%] font-bold text-[42px] pl-[100px] text-[#284F43] relative z-10 text-center'>
                                 こんな方に<br />おすすめ
                             </h2>
                         </div>
@@ -192,7 +195,7 @@ const Top = () => {
 
                 </div>
 
-                <div className='relative w-full bg-[#D6E7DA] pb-[300px] pt-[200px]'>
+                <div className='relative w-full bg-[#D6E7DA] pb-[300px]'>
                     {/* <div className='absolute'>
                         <img src="./gizagiza2.png" alt="境界線" />
                     </div> */}
@@ -202,23 +205,24 @@ const Top = () => {
                         </h2>
                         <Accordion
                             title= "注文してからどれくらいで届きますか？"
-                            content="This is the content of the first accordion."
+                            content="ご注文いただいてから、1〜3日程度でお届けいたします。（地域によって異なります）"
                         />
                         <Accordion
                             title="置き配はできますか？"
-                            content="This is the content of the second accordion."
+                            content="可能です。"
                         />
                         <Accordion
                             title="やめたい場合はどうしたらいいですか？"
-                            content="This is the content of the third accordion."
+                            content="お届け前週の火曜日19時30分までにご連絡をお願いいたします。
+                            お届け実施週内でのキャンセルは原則的にお受けできません。ただし、急な入院などの特別な場合はご相談ください。"
                         />
                         <Accordion
                             title="申し込みはどこからすればいいですか？"
-                            content="This is the content of the third accordion."
+                            content="本ページから館員登録をしていただけます。"
                         />
                         <Accordion
                             title="手数料（配達料）はいくらですか？"
-                            content="This is the content of the third accordion."
+                            content="日本中どこでも360円です。"
                         />
 
                     </section>

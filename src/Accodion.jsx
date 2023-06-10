@@ -21,7 +21,7 @@ const Accordion = ({ title, content }) => {
       </div>
       <div className="accordion-content max-h-0 overflow-hidden transition-all pt-0 pb-0 pl-4 pr-4 flex justify-between items-center border-t-2 w-full mx-auto" ref={contentRef}>
         <img src="./A.png" alt="Q" className='w-[4%] pt-[50px] pb-[50px]'/>
-        <p className='m-0 p-[1rem 0] w-[94%] text-[20px]'>{content}</p>
+        <p className='m-0 p-[1rem 0] w-[94%] text-[16px] text-[#284F43]'>{content}</p>
       </div>
     </div>
   );
