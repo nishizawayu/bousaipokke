@@ -11,12 +11,12 @@ const Firstview = () => {
     return (
         <>
             <div className='w-full h-screen relative'>
-                <div className='w-full h-[80vh] bg-firstview bg-contain bg-no-repeat absolute z-0'></div>
-                <p className='w-[30%] mx-auto pt-[5%] z-10 relative'><img src="./fv-text1.png" alt="スマホ一台で丸ごとOK" className="w-full" /></p>
-                <div className='w-full h-screen relative z-[1]'>
-                    <p className='w-[70%] absolute top-0 left-[15%]'><img src="./fv-text2.png" alt="防災" className="w-full" /></p>
-                    <img src="./fv-woman.png" alt="女性の画像" className="w-[30%] relative z-10 mx-auto top-0" />
-                    <p className='w-[60%] absolute top-[35%] left-[20%] z-20'><img src="./fv-text3.png" alt="ポッケ" className="w-full" /></p>
+                <div className='w-full lg:h-[80vh] lg:bg-firstview lg:bg-contain lg:bg-no-repeat lg:absolute lg:z-0'></div>
+                <p className='lg:w-[30%] lg:mx-auto lg:pt-[5%] lg:z-10 lg:relative'><img src="./fv-text1.png" alt="スマホ一台で丸ごとOK" className="w-full" /></p>
+                <div className='lg:w-full lg:h-screen lg:relative lg:z-[1]'>
+                    <p className='lg:w-[70%] lg:absolute lg:top-0 lg:left-[15%]'><img src="./fv-text2.png" alt="防災" className="w-full" /></p>
+                    <img src="./fv-woman.png" alt="女性の画像" className="lg:w-[30%] lg:relative lg:z-10 lg:mx-auto lg:top-0" />
+                    <p className='lg:w-[60%] lg:absolute lg:top-[35%] lg:left-[20%] lg:z-20'><img src="./fv-text3.png" alt="ポッケ" className="w-full" /></p>
                 </div>
             </div>
         </>
@@ -26,7 +26,7 @@ const Firstview = () => {
 const Slider = () => {
 
     return (
-        <div className='bg-iphon bg-inherit bg-no-repeat h-[600px] w-[50%] mx-auto'>
+        <div className='lg:bg-iphon lg:bg-inherit lg:bg-no-repeat lg:h-[600px] lg:w-[50%] lg:mx-auto'>
             <Swiper
             spaceBetween={10}
             slidesPerView={1}
@@ -36,42 +36,42 @@ const Slider = () => {
             {/* スライダーの要素 */}
             {/* 1つ目 */}
             <SwiperSlide>
-                <div className='w-[50%] relative pl-[20px] pt-[120px]'>
-                    <div className='flex flex-col-reverse pb-[30px]'>
-                        <h3 className='w-full text-[24px] font-bold text-[#284F43] leading-6 text-center'>賞味期限の確認を<br/>忘れてしまう</h3>
-                        <figure className='pb-[60px] mx-auto'>
+                <div className='lg:w-[50%] lg:relative lg:pl-[20px] lg:pt-[120px]'>
+                    <div className='lg:flex lg:flex-col-reverse lg:pb-[30px]'>
+                        <h3 className='lg:w-full lg:text-[24px] lg:font-bold text-[#284F43] lg:leading-6 lg:text-center'>賞味期限の確認を<br/>忘れてしまう</h3>
+                        <figure className='lg:pb-[60px] lg:mx-auto'>
                             <img src="./slider-img1.png" alt="女性の写真" />
                         </figure>
                     </div>
                    
-                    <p className='w-[80%] mx-auto text-[16px] font-light text-[#284F43] pb-[60px]'>忘れがちな食材の賞味期限を<br/>近づいたら自動でお知らせ。</p>
+                    <p className='lg:w-[80%] lg:mx-auto lg:text-[16px] lg:font-light text-[#284F43] lg:pb-[60px]'>忘れがちな食材の賞味期限を<br/>近づいたら自動でお知らせ。</p>
                 </div>
                 
             </SwiperSlide>
             {/* 2つ目 */}
             <SwiperSlide>
-                <div className='w-[50%] relative pl-[20px] pt-[120px]'>
-                    <div className='flex flex-col-reverse pb-[30px]'>
-                        <h3 className='w-full text-[24px] font-bold text-[#284F43] leading-6 text-center'>時間を割くのが<br/>もったいない</h3>
-                        <figure className='pb-[60px] mx-auto'>
+                <div className='lg:w-[50%] lg:relative lg:pl-[20px] lg:pt-[120px]'>
+                    <div className='lg:flex lg:flex-col-reverse lg:pb-[30px]'>
+                        <h3 className='lg:w-full lg:text-[24px] lg:font-bold text-[#284F43] lg:leading-6 lg:text-center'>時間を割くのが<br/>もったいない</h3>
+                        <figure className='lg:pb-[60px] lg:mx-auto'>
                             <img src="./slider-img2.png" alt="女性の写真" />
                         </figure>
                     </div>
                    
-                    <p className='w-[80%] mx-auto text-[16px] font-light text-[#284F43] pb-[60px]'>前回購入した商品がわかるからより少ない時間でらくらくチェック。</p>
+                    <p className='lg:w-[80%] lg:mx-auto lg:text-[16px] lg:font-light text-[#284F43] lg:pb-[60px]'>前回購入した商品がわかるからより少ない時間でらくらくチェック。</p>
                 </div>
             </SwiperSlide>
             {/* 3つ目 */}
             <SwiperSlide>
-                <div className='w-[50%] relative pl-[20px] pt-[120px]'>
-                    <div className='flex flex-col-reverse pb-[30px]'>
-                        <h3 className='w-full text-[24px] font-bold text-[#284F43] leading-6 text-center'>何を揃えたら良いのか<br/>わからない</h3>
-                        <figure className='pb-[60px] mx-auto'>
+                <div className='lg:w-[50%] lg:relative lg:pl-[20px] lg:pt-[120px]'>
+                    <div className='lg:flex lg:flex-col-reverse lg:pb-[30px]'>
+                        <h3 className='lg:w-full lg:text-[24px] lg:font-bold text-[#284F43] lg:leading-6 lg:text-center'>何を揃えたら良いのか<br/>わからない</h3>
+                        <figure className='lg:pb-[60px] lg:mx-auto'>
                             <img src="./slider-img3.png" alt="男性の写真" />
                         </figure>
                     </div>
                    
-                    <p className='w-[80%] mx-auto text-[16px] font-light text-[#284F43] pb-[60px]'>なにを交換しなくてはいけないかわからない方でも。おすすめの商品を安心管理。</p>
+                    <p className='lg:w-[80%] lg:mx-auto lg:text-[16px] font-light text-[#284F43] lg:pb-[60px]'>なにを交換しなくてはいけないかわからない方でも。おすすめの商品を安心管理。</p>
                 </div>
             </SwiperSlide>
 
@@ -99,19 +99,19 @@ const Top = () => {
             <main className='bg-[#F5F5F5]'>
                 <Firstview />
                 
-                <div className='w-full'>
+                <div className='lg:w-full'>
                     {/* about */}
-                    <section className='pt-40 w-[80%] mx-auto'>
-                        <h2 className=' font-bold text-[40px] text-[#284F43]'>
+                    <section className='w-[90%] pt-40 lg:w-[80%] mx-auto'>
+                        <h2 className=' text-center font-bold text-[28px] lg:text-[40px] text-[#284F43]'>
                             30秒で続けられる防災準備
                         </h2>
 
-                        <div className='w-full lg:flex lg:justify-between pt-32 mx-auto text-center pb-60'>
-                            <section>
+                        <div className='w-full lg:flex lg:justify-between pt-[60px] lg:pt-32 mx-auto text-center pb-60'>
+                            <section className='pb-[120px] lg:pb-0' >
                                 <h3 className='font-bold text-2xl leading-7 text-[#284F43]'>
                                     <span className='font-bold text-[40px]'>ぼうさいポッケ</span><br/>が、かなえてくれる
                                 </h3>
-                                <p className='text-base pt-8 leading-10'>
+                                <p className='text-base pt-8 leading-10 text-[#284F43]'>
                                     いざというときに備えたい、<br />
                                     重い腰があがらない、<br />
                                     何から始めていいかわからない、<br />
@@ -119,24 +119,25 @@ const Top = () => {
                                     <span className='text-xl font-bold text-[#284F43]'>ぼうさいポッケ</span>なのです。
                                 </p>
                             </section>
-                            <section>
-                                <h3 className='font-bold text-2xl leading-7 text-[#284F43]'>
+                            <section className='pb-[120px] lg:pb-0'>
+                                <h3 className='font-bold text-2xl  leading-7 text-[#284F43]'>
                                     <span className='font-bold text-[40px]'>ぼうさいポッケ</span><br />が、かんたん管理
                                 </h3>
-                                <p className='text-base pt-8 leading-10'>
+                                <p className='text-base pt-8 leading-10 text-[#284F43]'>
                                     忘れがちな消費期限も、<br />
                                     通知でお知らせしてくれるから<br />
                                     うっかり忘れもなくて安心！<br />
                                 </p>
                             </section>
-                            <section>
+                            <section className='pb-[120px] lg:pb-0'>
                                 <h3 className='font-bold text-2xl leading-7 text-[#284F43]'>
                                     <span className='font-bold text-[40px]'>ぼうさいポッケ</span><br/>が、らくらくつづく
                                 </h3>
-                                <p className='text-base pt-8 leading-10'>
+                                <p className='text-base pt-8 leading-10 text-[#284F43]'>
                                     めんどうな防災管理が<br />
-                                    スマホ一台だから<br />
-                                    継続して続けやすい！<br />
+                                    スマホ一台<span>だから</span><br />
+                                    継続して続けやすい、<br />
+                                    それが <span className='text-xl font-bold text-[#284F43]'>ぼうさいポッケ</span>的な？<br/>
                                 </p>
                             </section>
                         </div>
@@ -144,29 +145,29 @@ const Top = () => {
 
 
                     <div className=' w-full  bg-[#D6E7DA] relative'>
-                        <div className=' absolute top-[-45px]'>
+                        <div className=' lg:absolute lg:top-[-45px]'>
                             <img src="./gizagiza.png" alt="境界線" />
                         </div>
-                        <section className='w-[80%] mx-auto pt-[180px]'>
-                            <h2 className=' font-bold text-[32px] text-[#284F43] pl-[120px] pb-[140px]'>
+                        <section className='lg:w-[80%] lg:mx-auto lg:pt-[180px]'>
+                            <h2 className=' lg:font-bold lg:text-[32px] text-[#284F43] lg:pl-[120px] lg:pb-[140px]'>
                                 購入までのステップ
                             </h2>
-                            <div className=' flex mx-auto'>
+                            <div className=' lg:flex lg:mx-auto'>
                                 {
                                     stepdata.text.map((data, index) => (
-                                        <div className='w-full relative'>
-                                            <div className='text-center w-[90%]'>
-                                                <figure className=' w-full'>
+                                        <div className='lg:w-full lg:relative'>
+                                            <div className='lg:text-center lg:w-[90%]'>
+                                                <figure className=' lg:w-full'>
                                                     <img src={stepdata.img[index]} alt="stepの画像" className='w-[80%] mx-auto' />
                                                 </figure>
-                                                <p className=' text-[20px] text-[#284F43] mt-[5%]'>Step{index + 1}</p>
-                                                <p className=' text-[20px] font-bold text-[#284F43] mt-[5%]'>{data}</p>
+                                                <p className=' lg:text-[20px] text-[#284F43] lg:mt-[5%]'>Step{index + 1}</p>
+                                                <p className=' lg:text-[20px] font-bold text-[#284F43] mt-[5%]'>{data}</p>
                                             </div>
                                             {
                                                 (()=>{
                                                     if(index<stepdata.id.length-1){
                                                         return(
-                                                            <p className='w-[5%] absolute top-[33%] right-0'><img src="./arow.png" alt="" /></p>
+                                                            <p className='lg:w-[5%] lg:absolute lg:top-[33%] lg:right-0'><img src="./arow.png" alt="" /></p>
                                                         )
                                                     }
                                                 })()
@@ -182,10 +183,10 @@ const Top = () => {
                     </div>
                 </div>
 
-                <div className='relative w-full bg-[#D6E7DA] pb-[500px] pt-[300px] bg-bg-3 bg-cover'>
-                    <section className=' w-[80%] mx-auto flex items-center'>
-                        <div className='relative w-[50%] bg-bg-2 bg-no-repeat h-[600px] bg-contain flex items-center '>
-                            <h2 className='w-[80%] font-bold text-[42px] pl-[100px] text-[#284F43] relative z-10 text-center'>
+                <div className='lg:relative lg:w-full bg-[#D6E7DA] lg:pb-[500px] lg:pt-[300px] lg:bg-bg-3 lg:bg-cover'>
+                    <section className=' lg:w-[80%] lg:mx-auto lg:flex lg:items-center'>
+                        <div className='lg:relative lg:w-[50%] lg:bg-bg-2 lg:bg-no-repeat lg:h-[600px] lg:bg-contain lg:flex lg:items-center '>
+                            <h2 className='lg:w-[80%] lg:font-bold lg:text-[42px] lg:pl-[100px] text-[#284F43] lg:relative lg:z-10 lg:text-center'>
                                 こんな方に<br />おすすめ
                             </h2>
                         </div>
@@ -195,12 +196,12 @@ const Top = () => {
 
                 </div>
 
-                <div className='relative w-full bg-[#D6E7DA] pb-[300px]'>
+                <div className='lg:relative lg:w-full bg-[#D6E7DA] lg:pb-[300px]'>
                     {/* <div className='absolute'>
                         <img src="./gizagiza2.png" alt="境界線" />
                     </div> */}
-                    <section className=' w-[80%] mx-auto'>
-                        <h2 className=' font-bold text-[32px] text-[#284F43] pl-[20px] pb-[30px]'>
+                    <section className=' lg:w-[80%] lg:mx-auto'>
+                        <h2 className=' lg:font-bold lg:text-[32px] text-[#284F43] lg:pl-[20px] lg:pb-[30px]'>
                             よくあるご質問
                         </h2>
                         <Accordion
@@ -229,16 +230,16 @@ const Top = () => {
 
                 </div>
 
-                <div className='relative w-full bg-[#F5F5F5] pb-[300px] pt-[200px]'>
-                    <div className='absolute top-[-100px]'>
+                <div className='lg:relative lg:w-full bg-[#F5F5F5] lg:pb-[300px] lg:pt-[200px]'>
+                    <div className='lg:absolute lg:top-[-100px]'>
                             <img src="./gizagiza3.png" alt="境界線" />
                     </div>
                 
-                    <section className=' w-[80%] mx-auto'>
-                        <h2 className=' font-bold text-[32px] text-[#284F43] pl-[20px] pb-[60px]'>
+                    <section className=' lg:w-[80%] lg:mx-auto'>
+                        <h2 className=' lg:font-bold lg:text-[32px] text-[#284F43] lg:pl-[20px] lg:pb-[60px]'>
                             新規会員登録はこちら
                         </h2>
-                        <div className=' w-[80%] bg-[#E0EBE3] mx-auto'>
+                        <div className=' lg:w-[80%] bg-[#E0EBE3] lg:mx-auto'>
                             <ManyInput/>
                         </div>
 

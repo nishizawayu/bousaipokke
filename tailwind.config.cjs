@@ -13,7 +13,8 @@ module.exports = {
         'pc_footer': "url('/footer_bg.png')",
         'iphon': "url('/mobile.png')",
         'bg-2' : "url('/bg-2.png')",
-        'bg-3' : "url('/bg-3.png')"
+        'bg-3' : "url('/bg-3.png')",
+        'bg-dot':"url('/bg-dot.png')"
       },
     },
   },
