@@ -145,29 +145,29 @@ const Top = () => {
 
 
                     <div className=' w-full  bg-[#D6E7DA] relative'>
-                        <div className=' lg:absolute lg:top-[-45px]'>
-                            <img src="./gizagiza.png" alt="境界線" />
+                        <div className='absolute top-[-15px] lg:top-[-45px]'>
+                            <img src="./gizagiza.png" alt="境界線" className='w-full'/>
                         </div>
-                        <section className='lg:w-[80%] lg:mx-auto lg:pt-[180px]'>
-                            <h2 className=' lg:font-bold lg:text-[32px] text-[#284F43] lg:pl-[120px] lg:pb-[140px]'>
+                        <section className='lg:w-[80%] lg:mx-auto pt-[50px] lg:pt-[180px]'>
+                            <h2 className='text-center font-bold text-[28px] lg:text-left lg:text-[32px] text-[#284F43] lg:pl-[120px] lg:pb-[140px]'>
                                 購入までのステップ
                             </h2>
                             <div className=' lg:flex lg:mx-auto'>
                                 {
                                     stepdata.text.map((data, index) => (
-                                        <div className='lg:w-full lg:relative'>
-                                            <div className='lg:text-center lg:w-[90%]'>
+                                        <div className='w-full relative mt-[60px] lg:mt-0'>
+                                            <div className='text-center lg:w-[90%]'>
                                                 <figure className=' lg:w-full'>
-                                                    <img src={stepdata.img[index]} alt="stepの画像" className='w-[80%] mx-auto' />
+                                                    <img src={stepdata.img[index]} alt="stepの画像" className='w-[50%] lg:w-[80%] mx-auto' />
                                                 </figure>
-                                                <p className=' lg:text-[20px] text-[#284F43] lg:mt-[5%]'>Step{index + 1}</p>
-                                                <p className=' lg:text-[20px] font-bold text-[#284F43] mt-[5%]'>{data}</p>
+                                                <p className=' text-[20px] text-[#284F43] mt-[5%]'>Step{index + 1}</p>
+                                                <p className=' text-[20px] font-bold text-[#284F43] mt-[5%]'>{data}</p>
                                             </div>
                                             {
                                                 (()=>{
                                                     if(index<stepdata.id.length-1){
                                                         return(
-                                                            <p className='lg:w-[5%] lg:absolute lg:top-[33%] lg:right-0'><img src="./arow.png" alt="" /></p>
+                                                            <p className='rotate-90 lg:w-[5%] absolute bottom-0 lg:top-[33%] lg:right-0'><img src="./arow.png" alt="" /></p>
                                                         )
                                                     }
                                                 })()
@@ -183,11 +183,11 @@ const Top = () => {
                     </div>
                 </div>
 
-                <div className='lg:relative lg:w-full bg-[#D6E7DA] lg:pb-[500px] lg:pt-[300px] lg:bg-bg-3 lg:bg-cover'>
+                <div className='relative w-full bg-[#D6E7DA] lg:pb-[500px] pt-[240px] lg:pt-[300px] lg:bg-bg-3 lg:bg-cover'>
                     <section className=' lg:w-[80%] lg:mx-auto lg:flex lg:items-center'>
                         <div className='lg:relative lg:w-[50%] lg:bg-bg-2 lg:bg-no-repeat lg:h-[600px] lg:bg-contain lg:flex lg:items-center '>
-                            <h2 className='lg:w-[80%] lg:font-bold lg:text-[42px] lg:pl-[100px] text-[#284F43] lg:relative lg:z-10 lg:text-center'>
-                                こんな方に<br />おすすめ
+                            <h2 className='text-center text-[28px] lg:w-[80%] font-bold lg:text-[42px] lg:pl-[100px] text-[#284F43] lg:relative lg:z-10'>
+                                こんな方に<br className=''/>おすすめ
                             </h2>
                         </div>
 
